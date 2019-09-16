@@ -158,6 +158,7 @@ ul.chkImage{
     padding: 2rem;
 }
 .warningBlock img{
+    display: none;
     width: 3%;
     height: auto;
     float: center;
@@ -189,4 +190,36 @@ ul.chkImage{
     font-size: 1rem;
 }
 
+/*Grid Container rules */
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    'grid1'
+    'grid2';
+}
+
+#calContainer__calSection{
+    grid-area: grid1;
+
+}
+#calContainer_timerSection{
+    grid-area: grid2;
+}
+
 /*Media Queries*/
+
+/*Have to split the calender and timer section, portrait and checklist section*/
+@media only screen and (min-width: 768px) {
+
+    .warningBlock img{
+        display: inline-block;
+        float: left;
+    }
+
+    .gridContainer {
+        grid-template-areas: 
+        'grid1 grid2';
+    }
+
+
+}
