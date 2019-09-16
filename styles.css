@@ -1,3 +1,159 @@
+/*Initiali CSS */
+
+body {
+    margin:0;
+    font-family:"Lato", Arial, sans-serif;
+    background: white;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+h1, h2, h3 {
+    margin:0;
+    padding: 1em 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #005282;
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;
+    margin: .5em 0;
+
+}
+
+.btn:hover{
+    color: #333;
+    background: #005282
+}
+/*HEADER CSS */
+#intro {
+    min-height: 500px;
+    color: black;
+    text-align: center;
+
+}
+
+#intro h1 {
+    font-size: 1rem;
+}
+#intro hr{
+    border-top: .1rem solid #005282;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro p{
+    font-size: 1.4rem;
+    font-weight: 550;
+    font-family: "Lato", Arial , sans-serif;
+    
+}
+
+#intro input{
+    font-size: 1rem;
+    margin: 0px 0px 0px 0px;
+
+}
+
+#intro label{
+    margin-left: 1em;
+    font-size: 1rem;
+}
+
+
+
+/*Calendar Section CSS */
+
+#calSection{
+    background: #71a1be;
+
+}
+
+#calSection img{
+    display: inline-block;
+    width:40%;
+    height: auto;
+    margin: 2em;
+}
+
+/*timerSection CSS*/
+
+#timerSection {
+    background: #71a1be
+}
+
+/*jamSection CSS*/
+
+#jamSection {
+    background: #05263a;
+}
+#jamSection img{
+    display: inline-block;
+    width: 75%;
+    height: auto;
+    border: white;
+    margin: 1em;
+    margin-top: 3em;
+    margin-bottom: .3em;
+}
+#jamSection h3{
+    color: white;
+    font-size: 2rem;
+
+}
+#jamSection p{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 550;
+    font-family: "Lato", Arial, sans-serif;
+    margin-bottom: 2em;
+}
+
+
+/*checkSection CSS*/
+#checkSection ul{
+    margin: 2em;
+    margin-top: 1em;
+    font-size: 2rem;
+}
+
+#checkSection li{
+    text-align: left;
+    margin: 20px 0;
+    
+}
+
 ul.chkImage{
     list-style-image: url('https://d13p2xj50zkyqm.cloudfront.net/promos_1/AF/RGS/RGS_Hotlist_0617/RGS_Hotlist_0617_CheckmarkBox.png');
+    padding: 3em;
 }
+
+
+#checkSection h4{
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/*warningSection css*/
+
+#warningSection{
+
+}
+
+#warningSection warning{
+    background: #f58c99;
+}
+
+/*Media Queries*/

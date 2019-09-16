@@ -1,93 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
     <title>Agora WebPage</title>
-    
+
 </head>
+
 <body>
-<!-- Header -->
-<header id ="intro" class="grid">
-    <h1>Best-Selling Author and Gold Expert <br> Jim Rickards’ Presents… </h1>
-    <hr class ="firstDivide">
-    <p>“In just days a Never-Before- Seen Gold Anomaly  Will Create a Totally New Class of Penny Gold Stocks..</p>
-    <p>I’ve Enlisted One of the World’s Top Geologists  to Help Me Reveal... Live on Camera… What This Coming Gold Mega-Catalyst Is And How You Could Make  as Much as $101,000 in Profit.</p>
-    <!--Check put here put here-->
-    <input type="checkbox" id="myCheck" onclick="myFunction()">I would like to recieve a free newsletter<br>
+    <!-- Header -->
+    <header id="intro" class="grid">
+        <h1>Best-Selling Author and Gold Expert <br> Jim Rickards’ Presents… </h1>
+        <hr class="firstDivide">
+        <p>“In just days a Never-Before- Seen Gold Anomaly Will Create a Totally New Class of Penny Gold Stocks..</p>
+        <p>I’ve Enlisted One of the World’s Top Geologists to Help Me Reveal... Live on Camera… What This Coming Gold
+            Mega-Catalyst Is And How You Could Make as Much as $101,000 in Profit."</p>
+        <!--Check put here put here-->
+        <input type="checkbox" class="myCheck" onclick="myFunction()"><label>I would like to recieve a free newsletter</label><br>
 
-    <!--Register for Webinar Button-->
-    <a href="#regButton" class="btn">Register for this Free live Webinar Here!</a>
-</header>
+        <!--Register for Webinar Button-->
+        <a href="#regButton" class="btn">Register for this FREE<br>live Webinar Here!</a>
+    </header>
 
-<!--Content Main-->
-<main id="main">
-    <!--Calendar Section-->
-    <section id ="calSection" class="grid">
-        <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/RGS/RGS_Hotlist_0617/RGS_Hotlist_0617_Calendar.png" alt="">
-        <div class="textWrap">
-            <h2 class="content-title">May 29th</h2>
-            <p>TIME LEFT UNTIL THE WEBINAR STARTS...</p>
-        </div>
-    </section>
+    <!--Content Main-->
+    <main id="main">
+        <!--Calendar Section-->
+        <section id="calSection" class="grid">
+            <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/RGS/RGS_Hotlist_0617/RGS_Hotlist_0617_Calendar.png"
+                alt="">
+            <div class="textWrap">
+                <h2 class="content-title">May 29th</h2>
+            </div>
 
-    <!--James G. Rickards Section-->
-    <section id ="jamSection" class="grid">
-        <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/RGS/RGS_Hotlist_0617/RGS_Hotlist_0617_JimRickards.png
+
+            <div class="timeUntil">
+                <p>TIME LEFT UNTIL THE WEBINAR STARTS...</p>
+            </div>
+        </section>
+
+        <!--Timer Section-->
+        <section id="timerSection" class ="grid">
+            <div class="timeUntil">
+                <p>TIME LEFT UNTIL THE WEBINAR STARTS...</p>
+                <!--Code for timer goes here-->
+            </div>
+
+        </section>
+
+        <!--James G. Rickards Section-->
+        <section id="jamSection" class="grid">
+            <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/RGS/RGS_Hotlist_0617/RGS_Hotlist_0617_JimRickards.png
         " alt="">
-        <div class="portraitWrap">
-            <h3 class="caption">Presented by best selling author and gold expert...</h3>
-            <p>JAMES G. RICKARDS</p>
-        </div>
-    </section>
+            <div class="portraitWrap">
+                <h3 class="caption">Presented by best selling author and gold expert...</h3>
+                <p>JAMES G. RICKARDS</p>
+            </div>
+        </section>
 
 
 
 
-    <!--Checklist Section-->
-    <section id="checkSection" class="grid">
-        <div class ="ChecklistWrap">
-            <h4 class ="checklist">I'm going to show you...</h4>
-            <!--Potentially change this to a paragraph section-->
-            <ul class="chkImage">
-                <li>How a class of “off-limit” gold stocks could become fair game and shoot up in price…</li>
-                <li>Why just as many gold stocks could be CRUSHED. But this isn’t a bad thing. In fact, it’s going to open up a unique opportunity not seen in years…</li>
-                <li>How it could compound an announcement from the Federal Reserve next week that could send physical gold prices much higher…</li>
-                <li>Why you’ll hear predictions of doom for the gold market (it’s important you understand the truth and know the real profit opportunity that’s being set up)...</li>
-                <li>Why we may see confirmation that gold will make a run at $2,000 sooner than anyone thinks...</li>
-            </ul>
-        </div>
+        <!--Checklist Section-->
+        <section id="checkSection" class="grid">
+            <div class="ChecklistWrap">
+                <h4 class="checklist">I'm going to show you...</h4>
+                <!--Potentially change this to a paragraph section-->
+                <ul class="chkImage">
+                    <li>How a class of “off-limit” gold stocks could become fair game and shoot up in price…</li>
+                    <li>Why just as many gold stocks could be CRUSHED. But this isn’t a bad thing. In fact, it’s going
+                        to open up a unique opportunity not seen in years…</li>
+                    <li>How it could compound an announcement from the Federal Reserve next week that could send
+                        physical gold prices much higher…</li>
+                    <li>Why you’ll hear predictions of doom for the gold market (it’s important you understand the truth
+                        and know the real profit opportunity that’s being set up)...</li>
+                    <li>Why we may see confirmation that gold will make a run at $2,000 sooner than anyone thinks...
+                    </li>
+                </ul>
+            </div>
 
 
 
 
 
-    </section>
+        </section>
 
-    <!--Warning Section-->
-    <section id="warningSection" class="grid">
-        <div class="warning">
-            <h5 class ="warningText">WARNING: SPACE IS LIMITED & THESE LIVE TRAININGS ALWAYS FILL UP </h5>
-        </div>
-        <div class="spotClaim">
-            <h6 class = "claim">Claim your spot below before it's too late!</h6>
-        </div>
-        <div class ="ending">
-            <!--Check put here put here-->
-            <input type="checkbox" id="myCheck" onclick="myFunction()">I would like to recieve a free newsletter<br>
+        <!--Warning Section-->
+        <section id="warningSection" class="grid">
+            <div class="warning">
+                <h5 class="warningText">WARNING: SPACE IS LIMITED & THESE LIVE TRAININGS ALWAYS FILL UP </h5>
+            </div>
+            <div class="spotClaim">
+                <h6 class="claim">Claim your spot below before it's too late!</h6>
+            </div>
+            <div class="ending">
+                <!--Check put here put here-->
+                <input type="checkbox" class="myCheck" onclick="myFunction()">I would like to recieve a free newsletter<br>
 
-            <a href="#reserveButton" class="btn">YES! Reserve My Spot Now! >></a>
+                <a href="#reserveButton" class="btn">YES! Reserve My Spot Now! >></a>
 
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <!--Claim Spot Below Section-->
+        <!--Claim Spot Below Section-->
 
-    <!--Footer-->
-</main>
-
-    
+        <!--Footer-->
+    </main>
 </body>
+
 </html>
