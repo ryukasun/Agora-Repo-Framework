@@ -148,12 +148,27 @@ ul.chkImage{
 
 /*warningSection css*/
 
-#warningSection{
+
+.warningBlock{
+    background: #f58c99;
+}
+
+.spotClaim{
+    background: #05263a;
+
+}
+.ending{
+
+}
+#warningSection input{
+    font-size: 1rem;
+    margin: 0px 0px 0px 0px;
 
 }
 
-#warningSection warning{
-    background: #f58c99;
+#warningSection label{
+    margin-left: 1em;
+    font-size: 1rem;
 }
 
 /*Media Queries*/
