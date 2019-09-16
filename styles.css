@@ -26,8 +26,9 @@ h1, h2, h3 {
     background: #005282;
     color: white;
     text-decoration: none;
-    padding: 1em 2em;
+    padding: 1em 3em;
     margin: .5em 0;
+    font-size: 1.5rem;
 
 }
 
@@ -77,6 +78,7 @@ h1, h2, h3 {
 
 #calSection{
     background: #71a1be;
+    color: white;
 
 }
 
@@ -90,7 +92,8 @@ h1, h2, h3 {
 /*timerSection CSS*/
 
 #timerSection {
-    background: #71a1be
+    background: #71a1be;
+    color: white;
 }
 
 /*jamSection CSS*/
@@ -151,15 +154,30 @@ ul.chkImage{
 
 .warningBlock{
     background: #f58c99;
+    color:white;
+    padding: 2rem;
+}
+.warningBlock img{
+    width: 3%;
+    height: auto;
+    float: center;
+    max-width:100%;
+    max-height:5%
+}
+.warningBlock h5{
+    font-size: 1.2 rem;
 }
 
 .spotClaim{
     background: #05263a;
+    color: white;
+    padding:2rem;
 
 }
-.ending{
-
+.spotClaim h6{
+    font-size: 1.2rem;
 }
+
 #warningSection input{
     font-size: 1rem;
     margin: 0px 0px 0px 0px;

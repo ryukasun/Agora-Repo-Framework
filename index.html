@@ -21,11 +21,11 @@
         <p>I’ve Enlisted One of the World’s Top Geologists to Help Me Reveal... Live on Camera… What This Coming Gold
             Mega-Catalyst Is And How You Could Make as Much as $101,000 in Profit."</p>
         <!--Check put here put here-->
-        <input type="checkbox" class="myCheck" onclick="myFunction()"><label>I would like to recieve a free newsletter</label><br>
+        <input type="checkbox" class="myCheck" id="chk1" onclick="myFunction()"><label>I would like to recieve a free newsletter</label><br>
 
 
         <!--Register for Webinar Button-->
-        <a href="#regButton" class="btn">Register for this FREE<br>live Webinar Here!</a>
+        <a href="#regButton" class="btn" id="regButton">Register for this FREE<br>live Webinar Here!</a>
     </header>
 
     <!--Content Main-->
@@ -40,7 +40,7 @@
 
 
             <div class="timeUntil">
-                <p>TIME LEFT UNTIL THE WEBINAR STARTS...</p>
+                <p>at 5:00 PM EDT</p>
             </div>
         </section>
 
@@ -48,7 +48,38 @@
         <section id="timerSection" class ="grid">
             <div class="timeUntil">
                 <p>TIME LEFT UNTIL THE WEBINAR STARTS...</p>
+                <p id=timer></p>
                 <!--Code for timer goes here-->
+
+                <script>
+                        //Set next date to have 5 days more then current date to its midnight
+
+                        var countdown = new Date();
+                        countdown.setHours(0,0,0,0);
+                        var numDays = 5;
+                        countdown.setDate(countdown.getDate() + 5)
+
+                        
+                        // Refresh countdown
+                        var x = setInterval(function() {
+                        
+                          // Get current date and time
+                          var current = new Date().getTime();
+                            
+                          // Find the distance between now and the count down date
+                          var distance = countdown.getTime() - current;
+                            
+                          // use mod to get the days, hours, mins and seconds
+                          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                          //print out the timer 
+                          document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                          + minutes + "m " + seconds + "s ";
+        
+                        }, 1000);
+                        </script>
             </div>
 
         </section>
@@ -93,6 +124,7 @@
         <!--Warning Section-->
         <section id="warningSection" class="grid">
             <div class="warningBlock">
+                <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/RGS/RGS_Hotlist_0617/RGS_Hotlist_0617_Warning.png" alt="">
                 <h5 class="warningText">WARNING: SPACE IS LIMITED & THESE LIVE TRAININGS ALWAYS FILL UP </h5>
             </div>
 
@@ -102,10 +134,11 @@
             <div class="ending">
                 <!--Check put here put here-->
                 <!-- <input type="checkbox" class="myCheck" onclick="myFunction()">I would like to recieve a free newsletter<br> -->
-                <input type="checkbox" class="myCheck" onclick="myFunction()"><label>I would like to recieve a free newsletter</label><br>
+                
+                <input type="checkbox" class="myCheck" id="chk2" onclick="myFunction()"><label>I would like to recieve a free newsletter</label><br>
 
 
-                <a href="#reserveButton" class="btn">YES! Reserve My Spot Now! >></a>
+                <a href="#reserveButton" class="btn" id="reserveButton">YES! Reserve My Spot Now! >></a>
 
             </div>
         </section>
@@ -114,6 +147,12 @@
 
         <!--Footer-->
     </main>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script src ="/main.js"></script>
 </body>
 
 </html>
