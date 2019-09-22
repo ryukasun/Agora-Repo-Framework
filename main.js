@@ -12,34 +12,45 @@ $(function () {
 
 
 $(".btn").click(function () {
-    //checks if button has been c
+    //Checks if a button has been clicked to execute this function
+
     if ($(".myCheck").prop("checked") == true) {
 
-        alert("Checked");
-        //const Http = new XMLHttpRequest();
-        const newUrl = 'https://bl45immth4.execute-api.us-east-1.amazona ws.com/production/';
-        $.getJson(newUrl,function(result){
-            console.log(result);
-            alert(result);
+        //alert("Checked");
+        //simply checks to see if the check has been checked before pressing the button
+
+        //Code here is for dealing with request from webservice
+        const newUrl = 'https://bl45immth4.execute-api.us-east-1.amazonaws.com/production/';
+
+        //create new 
+
+        $.ajax({
+            url: newUrl,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(result){
+  
+
+
+                //Parse result into a json which only includes the values nested in the body section
+                var resString = JSON.parse(result.body);
+
+                //Stringify the value that is present at submitok
+                var submitokVal = JSON.stringify(resString.submitok);
+
+                //Modify html paragraph with new text from submitOk
+                document.getElementById("submitokText1").innerHTML = submitokVal;
+                document.getElementById("submitokText2").innerHTML = submitokVal;
+
+            }
         });
-      //  Http.open("GET", url);
-      //  Http.send();
 
-        // $.ajax({
-        //     url: newUrl,
-        //     type:"GET",
-        //     success: function(result){
-        //         console.log(result)
-        //     },
-        //     error:function(error){
-        //         console.log('Error ${error}')
-        //     }
-        // });
 
-      
 
 
     } else if ($(".myCheck").prop("checked") == false) {
+        //If the check hasn't been checked then the website will shoot out an alert to the user.
         alert("Please check the checkboxes before registering.");
     }
 });
+
